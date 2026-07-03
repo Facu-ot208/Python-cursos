@@ -1,2 +1,3 @@
 # Python-cursos
-otero gay
+Alumnos:
+Otero, Facundo
