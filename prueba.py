@@ -1,10 +1,10 @@
 print ("MENU")
 print("Elija un número")
-print("1- Registrar)
-print("2-Cursos Disp")
-print("3-Inscribirse")
-print("4-Lista de espera)
-print("5- Salir")
+print("1.Registrar)
+print("2.Cursos Disp")
+print("3.Inscribirse")
+print("4.Lista de espera)
+print("5.Salir")
 elec = input()
 if elec == 1
 
