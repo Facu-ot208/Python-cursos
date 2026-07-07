@@ -1,7 +1,7 @@
 # Python-cursos
 ### Integrantes del Curso:
 - Camnasio, Avril
-- Insaurralde Anriquez, Santiago Gabril
+- Insaurralde Anriquez, Santiago Gabriel
 - Muñoa, Eugenia Ibel
 - Muzzupappa, Nahir
 - Otero, Nelson Facundo
