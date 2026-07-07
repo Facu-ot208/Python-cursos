@@ -149,8 +149,8 @@ def main():
   print("1.Registrar estudiante")
   print("2.Ver cursos disponibles")
   print("3.Inscribirse a un curso")
-  print("4. Ver lista de espera")
-  print("5. Salir")
+  print("4.Ver lista de espera")
+  print("5.Salir")
   opcion = input("Elija una opción: ").strip()
   if opcion == "1":
    print("\nREGISTRO DE UN ALUMNO")
@@ -158,13 +158,13 @@ def main():
   elif opcion == "2":
    print("\nCURSOS DISPONIBLES")
    ver_cursos_disponibles()
-  elif opcion == 3:
+  elif opcion == "3":
    print("\nINSCRIPCIÓN A CURSOS")
    inscribir_estudiante()
-  elif opcion == 4:
+  elif opcion == "4":
    print("\nLISTA DE ESPERA DE CURSOS:")
    ver_lista_espera()
-  elif opcion == 5 :
+  elif opcion == "5" :
    mostrar_estadisticas_finales()
    print("\nGRACIAS POR TU VISITA")
    break
