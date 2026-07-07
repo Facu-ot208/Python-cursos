@@ -1,24 +1,34 @@
 #primero abrimos el menu principal donde el usuario elegira que hace a continuación
-print ("MENU")
-print("1.Registrar")
-print("2.Cursos Disp")
-print("3.Inscribirse")
-print("4.Lista de espera")
-print("5.Salir")
-elec = int(input("Elija una opción: "))
-if elec == 1:
- print("REGISTRO DE UN ALUMNO")
- elif elec == 2:
-  print("CURSOS DISPONIBLES")
+def main():
+ while True:
+  print ("\nMENU")
+  print("1.Registrar estudiante")
+  print("2.Ver cursos disponibles")
+  print("3.Inscribirse a un curso")
+  print("4. Ver lista de espera")
+  print("5. Salir")
+opcion = input("Elija una opción: ").strip()
+if opcion == "1":
+ print("\nREGISTRO DE UN ALUMNO")
+ registrar_estudiante()
+ elif opcion == "2":
+  print("\nCURSOS DISPONIBLES")
+  ver_cursos_disponibles()
  elif elec == 3:
-  print("INSCRIPCIÓN A CURSOS")
+  print("\nINSCRIPCIÓN A CURSOS")
+  inscribir_estudiante()
  elif elec == 4:
-  print("LISTA DE ESPERA DE CURSOS:")
+  print("\nLISTA DE ESPERA DE CURSOS:")
+  ver_lista_espera()
  elif elec == 5 :
-  print("GRACIAS POR TU VISITA")
+  mostrar_estadisticas_finales()
+  print("\nGRACIAS POR TU VISITA")
+  break
+else:
+print("Opcion invalida, intente de nuevo")
 
 
-def inscribir():
+def inscribir_estudiante():
     dni = input("DNI: ")
     alumno = buscar_estudiante(dni)
     if alumno == None:
