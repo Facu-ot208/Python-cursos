@@ -169,5 +169,10 @@ def main():
    print("\nGRACIAS POR TU VISITA")
    break
  else:
-  print("Opcion inva
- lida, intente de nuevo")
+  print("Opcion invalida, intente de nuevo")
+
+if __name__ == "__main__":
+ main()
+
+
+
