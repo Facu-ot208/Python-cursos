@@ -112,8 +112,8 @@ def verificar_lista_espera(nombre_curso):
 def ver_lista_espera():
  print("\n--- Lista de Espera por Curso ---")
  try:
-  with open(ARCHIVO_ESPERA, "r") as f
-  lineas = f.readlines()
+  with open(ARCHIVO_ESPERA, "r") as f:
+   lineas = f.readlines()
  except FileNotFoundError:
   print("Todavía no hay nadie en lista de espera")
   return
@@ -169,4 +169,5 @@ def main():
    print("\nGRACIAS POR TU VISITA")
    break
  else:
-  print("Opcion invalida, intente de nuevo")
+  print("Opcion inva
+ lida, intente de nuevo")
