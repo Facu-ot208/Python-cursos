@@ -79,7 +79,7 @@ def inscribir_estudiante():
  lista_cursos = list(CURSOS.items())
  print("\nCursos disponibles:")
  for i, (nombre_curso, cupo_max) in enumerate(lista_cursos, start=1):
-  ocupados = contar_inscritos(nombre_curso)
+  ocupados = contar_inscriptos(nombre_curso)
   print(f"{i}. {nombre_curso} - Cupos ocupados: {ocupados}/{cupo_max}")   
  opcion = input("Elija el número de curso: ").strip() 
  if not opcion.isdigit() or int(opcion) < 1 or int(opcion) > len(lista_cursos):
@@ -100,7 +100,7 @@ def inscribir_estudiante():
 #verifica si existe una lista de espera para un determinado curso.
 def verificar_lista_espera(nombre_curso):
  try:
-  with open(ARCHVIO_ESPERA, "r") as f:
+  with open(ARCHIVO_ESPERA, "r") as f:
    for linea in f:
     if linea.startswith(nombre_curso + ","):
      return True
@@ -134,22 +134,22 @@ def main():
   print("3.Inscribirse a un curso")
   print("4. Ver lista de espera")
   print("5. Salir")
-opcion = input("Elija una opción: ").strip()
-if opcion == "1":
- print("\nREGISTRO DE UN ALUMNO")
- registrar_estudiante()
- elif opcion == "2":
-  print("\nCURSOS DISPONIBLES")
-  ver_cursos_disponibles()
- elif opcion == 3:
-  print("\nINSCRIPCIÓN A CURSOS")
-  inscribir_estudiante()
- elif opcion == 4:
-  print("\nLISTA DE ESPERA DE CURSOS:")
-  ver_lista_espera()
- elif opcion == 5 :
-  mostrar_estadisticas_finales()
-  print("\nGRACIAS POR TU VISITA")
-  break
-else:
-print("Opcion invalida, intente de nuevo")
+  opcion = input("Elija una opción: ").strip()
+  if opcion == "1":
+   print("\nREGISTRO DE UN ALUMNO")
+   registrar_estudiante()
+  elif opcion == "2":
+   print("\nCURSOS DISPONIBLES")
+   ver_cursos_disponibles()
+  elif opcion == 3:
+   print("\nINSCRIPCIÓN A CURSOS")
+   inscribir_estudiante()
+  elif opcion == 4:
+   print("\nLISTA DE ESPERA DE CURSOS:")
+   ver_lista_espera()
+  elif opcion == 5 :
+   mostrar_estadisticas_finales()
+   print("\nGRACIAS POR TU VISITA")
+   break
+ else:
+ print("Opcion invalida, intente de nuevo")
