@@ -124,6 +124,23 @@ def ver_lista_espera():
   curso, dni, nombre = linea.strip().split(",")
   print(f"{curso}: {nombre} (DNI {dni})")
 
+#funcion que usaremos para contar las lineas de un archivo y obtener un numero para las estadisticas
+def contar_lineas(archivo):
+ try:
+  with open(archivo, "r") as f:
+   return len(f.readlines())
+ except FileNotFoundError:
+  return 0
+
+#funcion que usaremos para mostrar nuestras estadisticas finales de todos los inscriptos a cursos, registrados y personas en lista de espera
+def mostrar_estadisticas_finales():
+ total_registrados = contar_lineas(ARCHIVO_ESTUDIANTES)
+ total_inscriptos = contar_lineas(ARCHIVO_INSCRIPCIONES)
+ total_espera = contar_lineas(ARCHIVO_ESPERA)
+ print("\n--- ESTADÍSTICAS FINALES ---")
+ print(f"Total de personas registradas: {total_registrados}")
+ print(f"Total de inscriptos a cursos: {total_inscriptos}")
+ print(f"Total en lista de espera: {total_espera}")
 
 #abrimos el menu principal donde el usuario elegira que hace a continuación
 def main():
@@ -152,4 +169,4 @@ def main():
    print("\nGRACIAS POR TU VISITA")
    break
  else:
- print("Opcion invalida, intente de nuevo")
+  print("Opcion invalida, intente de nuevo")
