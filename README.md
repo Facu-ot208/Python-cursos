@@ -20,5 +20,4 @@ Al ejecutar el archivo, el programa muestra el menú con las 5 opciones disponib
 - Si se elige opción 5, cuenta las líneas de los tres archivos, muestra los totales (registrados, inscriptos, en espera) y luego finaliza la ejecución del programa.
 - Cualquier otro valor ingresado en el menú no coincide, por lo que el programa simplemente vuelve a mostrar el menú.
 
-> Que IA utilizamos: 
 > La IA que utilizamos para el trabajo fue `Claude IA`, la utilizamos para poder ayudarnos cuando no entendiamos que nos faltaba para que el codigo funcione; o cuando ocurria un error y por mas que se intentaba corregir, no se arreglaba.
