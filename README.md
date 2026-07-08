@@ -8,6 +8,8 @@
 
 Comision: ISI A - K1.1
 
+En acuerdo con los cuatro miembros restantes (Muñoa Eugenia, Camnasio Avril, Otero Facundo y Muzzupappa Nahir): Se solicita retirar el nombre del integrante Santiago Anriquez, ya que no participó en el desarrollo del código ni realizó aportes al proyecto. Asimismo, hizo caso omiso a los mensajes y a los acuerdos establecidos para la realización del trabajo, no envió su parte para el video, no colaboró en ninguna de las tareas asignadas y no demostró interés ni compromiso con el desarrollo de la actividad.
+
 ### Descripción general del sistema:
 Este programa está desarrollado en Python y permite gestionar la `inscripción de estudiantes a cinco cursos de gastronomía`, cada uno con un cupo máximo definido. En lugar de una base de datos, utiliza tres archivos de texto plano: uno para registrar a los estudiantes (DNI y nombre), otro para las inscripciones confirmadas, y otro para la lista de espera cuando un curso ya no tiene lugares disponibles. El sistema funciona mediante un menú interactivo por consola que se repite hasta que el usuario decide salir. Desde allí se puede registrar un nuevo estudiante, consultar el estado de los cursos (cupo, ocupados y si hay lista de espera), inscribirse a un curso, y ver el detalle completo de quienes están en lista de espera. Al inscribirse, el sistema verifica primero que el estudiante esté registrado; luego, si el curso elegido tiene cupo disponible lo inscribe directamente, y si no, lo agrega a la lista de espera de ese curso. Al finalizar el programa, se muestran estadísticas generales con el total de registrados, inscriptos y personas en espera
 
@@ -23,5 +25,3 @@ Al ejecutar el archivo, el programa muestra el menú con las 5 opciones disponib
  
 > La IA que utilizamos para el trabajo fue `Claude IA`, la utilizamos para poder ayudarnos cuando no entendiamos que nos faltaba para que el codigo funcione; o cuando ocurria un error y por mas que se intentaba corregir, no se arreglaba.
 
-
-En acuerdo con los cuatro miembros restantes (Muñoa Eugenia, Camnasio Avril, Otero Facundo y Muzzupappa Nahir): Se solicita retirar el nombre del integrante Santiago Anriquez, ya que no participó en el desarrollo del código ni realizó aportes al proyecto. Asimismo, hizo caso omiso a los mensajes y a los acuerdos establecidos para la realización del trabajo, no envió su parte para el video, no colaboró en ninguna de las tareas asignadas y no demostró interés ni compromiso con el desarrollo de la actividad.
