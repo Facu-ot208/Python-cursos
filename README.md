@@ -22,3 +22,6 @@ Al ejecutar el archivo, el programa muestra el menú con las 5 opciones disponib
 
  
 > La IA que utilizamos para el trabajo fue `Claude IA`, la utilizamos para poder ayudarnos cuando no entendiamos que nos faltaba para que el codigo funcione; o cuando ocurria un error y por mas que se intentaba corregir, no se arreglaba.
+
+
+En acuerdo con los cuatro miembros restantes (Muñoa Eugenia, Camnasio Avril, Otero Facundo y Muzzupappa Nahir): Se solicita retirar el nombre del integrante Santiago Anriquez, ya que no participó en el desarrollo del código ni realizó aportes al proyecto. Asimismo, hizo caso omiso a los mensajes y a los acuerdos establecidos para la realización del trabajo, no envió su parte para el video, no colaboró en ninguna de las tareas asignadas y no demostró interés ni compromiso con el desarrollo de la actividad.
